@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.zy.actinium.model.locator.spring.boot.autoconfiguration.UnitTestAutoConfiguration
