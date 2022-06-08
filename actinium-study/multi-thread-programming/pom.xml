@@ -3,21 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>actinium</artifactId>
+        <artifactId>actinium-study</artifactId>
         <groupId>com.zy</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>actinium-study</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>data-structure-algorithm</module>
-        <module>multi-thread-programming</module>
-        <module>jwt-jws</module>
-        <module>nimbus-jose-jwt</module>
-        <module>java-jwt</module>
-    </modules>
+    <artifactId>multi-thread-programming</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
