@@ -24,6 +24,10 @@ git commit -m 'update .gitignore'
 
  git config user.name
  git config user.email
+ 
+ ## 使用token push pull 但要注意 token会过期 注意设置时间
+ git remote set-url [origin(远程仓库名称默认是 origin)] https://[token]@github.com/zyresurgence/actinium.git
+ git remote push origin main
 ```
 
 # github出现无法拉取的情况
