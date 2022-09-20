@@ -1,0 +1,19 @@
+server:
+  port: 8021
+spring:
+  application:
+    name: rabbitmq-provider
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 112.124.64.36
+    port: 5672
+    username: neo
+    password: neo
+    #虚拟host 可以不设置,使用server默认host
+    virtual-host: /
+    ##设置此属性配置可以确保消息成功发送到交换器 NONE禁用发布确认模式（默认），CORRELATED（开启），SIMPLE（开启以及可获取返回值）
+    publisher-confirm-type: CORRELATED
+    #消息匹配到Queue并且失败时，会通知回调returnedMessage()方法
+    template:
+      mandatory: true
+#    publisher-returns: true

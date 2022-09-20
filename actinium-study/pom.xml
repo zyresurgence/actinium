@@ -14,9 +14,10 @@
     <modules>
         <module>data-structure-algorithm</module>
         <module>multi-thread-programming</module>
-        <module>jwt-jws</module>
         <module>nimbus-jose-jwt</module>
         <module>java-jwt</module>
+        <module>spring-boot-rabbitmq</module>
+        <module>java-stream</module>
     </modules>
 
     <properties>

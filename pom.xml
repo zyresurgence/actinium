@@ -10,6 +10,13 @@
     <url>http://maven.apache.org</url>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>actinium-cloud</module>
+        <module>actinium-common</module>
+        <module>actinium-demo</module>
+        <module>actinium-study</module>
+    </modules>
+
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,7 +24,7 @@
         <maven.compiler.compilerVersion>11</maven.compiler.compilerVersion>
         <common.lang3.version>3.12.0</common.lang3.version>
         <common.beanutils.version>1.9.4</common.beanutils.version>
-        <hutools.all.version>5.8.0.M3</hutools.all.version>
+        <hutools.all.version>5.8.6</hutools.all.version>
         <spring.boot.version>2.6.3</spring.boot.version>
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
         <srping.version>5.3.15</srping.version>
@@ -26,6 +33,7 @@
         <sl4j.api.version>1.7.26</sl4j.api.version>
         <log4j-sl4j.api.version>2.9.1</log4j-sl4j.api.version>
         <apache.poi.api.version>4.1.2</apache.poi.api.version>
+        <disruptor.version>3.3.4</disruptor.version>
     </properties>
 
     <dependencyManagement>
@@ -144,6 +152,13 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <scope>test</scope>
+                <version>${disruptor.version}</version>
             </dependency>
 
         </dependencies>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn"
+			   packages="com.oppo.logging.log4j.core.pattern">
+	<Properties>
+		<Property name="LOG_PATTERN">
+			<![CDATA[%date [%thread] %level{length=5} [%logger:%line] %msg %X%n]]>
+		</Property>
+		<Property name="ROOT_LOG_LEVEL">DEBUG</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<AsyncRoot level="${ROOT_LOG_LEVEL}" includeLocation="true">
+			<AppenderRef ref="Console" />
+		</AsyncRoot>
+	</Loggers>
+</Configuration>
